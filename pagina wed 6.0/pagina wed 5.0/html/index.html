@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://kit.fontawesome.com https://ka-f.fontawesome.com; connect-src 'self' http://localhost:5000; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://kit.fontawesome.com; script-src 'self' https://kit.fontawesome.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com https://ka-f.fontawesome.com; media-src 'self';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <title>Ristorante Italiano</title>
+    <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">    <link rel="stylesheet" href="../css/estilos1.css">
+    <link rel="stylesheet" href="../css/estilos2.css">
+    <link rel="stylesheet" href="../css/estilos3.css">
+</head>
+
+<body>
+    <header class="encabezado" id="inicio">
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <div class="logo">
+                    <h2>Ristorante <span class="verde">Tu</span><span>ri</span><span class="rojo">lli</span></h2>
+                </div>
+                <nav class="navegacion">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#nosotros">Sobre Nosotros</a>
+                    <a href="#menu">Menú</a>
+                    <a href="#pedido">Pedidos</a>
+                    <a href="#pedido">Tu pedido</a>
+                    <a href="#" id="abrir-chat-nav">Asistente virtual</a>
+                    <a href="#chef">Chef</a>
+                    <a href="#contacto">Contacto</a>
+                    <a href="https://wa.me/573117542371" target="_blank" rel="noopener">WhatsApp</a>
+                </nav>
+            </div>
+        </div>
+        <div class="contenido-header">
+            <div class="contenedor-encabezado">
+                <div class="texto-encabezado">
+                    <h2>Sapore di Casa!</h2>
+                    <a href="#menu" class="btn bordes">Il nostro menú</a>
+                </div>
+                <video autoplay loop muted>
+                    <source src="../imagenes/bg_video (1).mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-nosotros contenedor" id="nosotros">
+        <div class="texto-nosotros">
+            <p class="bienvenida">Bienvenido a!</p>
+            <h1>Sobre nosotros</h1>
+            <p>Desde que abrimos nuestras puertas, hemos querido compartir algo mas que comida:quremos compartir la autentica pasion italiana por la buena mesa. Nuestra recetas nacen de tradiciones familiares transmitidas de generacion en generacion elaboradas con ingredientes frescos y de primera calidad
+            </p>
+            <a href="https://wa.me/573117542371" class="btn btn-rojo" target="_blank" rel="noopener">Contactar</a>
+        </div>
+        <div class="imagenes-nosotros">
+            <div class="imagen1">
+                <img src="../imagenes/nosotros1.webp" alt="mujer comiendo pizza">
+            </div>
+            <div class="imagenes2">
+                <img src="../imagenes/nosotros2.webp" alt="mujeres comiendo pizza">
+                <img src="../imagenes/nosotros3.webp" alt="plato con pasta">
+            </div>
+        </div>
+    </div>
+
+    <section class="menu contenedor" id="menu">
+        <h2 class="texto-platillos">Platillos populares</h2>
+        <div class="botones-platillos">
+            <button class="todos btn btn-verde">Todos</button>
+            <button class="ensaladas btn btn-verde">Ensaladas</button>
+            <button class="pasta btn btn-verde">Pasta</button>
+            <button class="pizza btn btn-verde">Pizza</button>
+            <button class="postres btn btn-verde">Postres</button>
+        </div>
+        <div class="platillos">
+            <div class="platillo" data-platillo="ensalada">
+                <img src="../imagenes/ensalada.webp" alt="ensalada">
+                <h2>Insalata Caprese</h2>
+                <p>tomate,mozzarella fresca,albahaca,aceite de oliva</p>
+                <div class="precio">
+                    <p>$22.000</p>
+                    <button type="button" aria-label="Agregar Insalata Caprese al pedido">🛒</button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <img src="../imagenes/ensalada2.webp" alt="ensalada">
+                <h2>Insalata Mista</h2>
+                <p>mezcla de lechugas,zanahoria,cebolla morada,aceitunas</p>
+                <div class="precio">
+                    <p>$15.000</p>
+                    <button type="button" aria-label="Agregar Insalata Mista al pedido">🛒</button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <img src="../imagenes/ensalada3.webp" alt="ensalada">
+                <h2>Insalata di Mare</h2>
+                <p>mariscos frescos,apio,limon,aceite de oliva</p>
+                <div class="precio">
+                    <p>$24.000</p>
+                    <button type="button" aria-label="Agregar Insalata di Mare al pedido">🛒</button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img src="../imagenes/pasta1.webp" alt="pasta">
+                <h2>pasta clasica</h2>
+                <p>.........</p>
+                <div class="precio">
+                    <p>$34.000</p>
+                    <button type="button" aria-label="Agregar pasta clásica al pedido">🛒</button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img src="../imagenes/pasta2.webp" alt="pasta">
+                <h2>pasta exclusiva</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$41.500</p>
+                    <button type="button" aria-label="Agregar pasta exclusiva al pedido">🛒</button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img src="../imagenes/pasta3.webp" alt="pasta">
+                <h2>pasta premium</h2>
+                <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                <div class="precio">
+                    <p>$55.000</p>
+                    <button type="button" aria-label="Agregar pasta premium al pedido">🛒</button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img src="../imagenes/pizza1.webp" alt="pizza">
+                <h2>Pizza Diavola</h2>
+                <p>Salsa de Tomate, mozzarella, pepperoni y aceitunas.</p>
+                <div class="precio">
+                    <p>$45.000</p>
+                    <button type="button" aria-label="Agregar Pizza Diavola al pedido">🛒</button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img src="../imagenes/pizza2.webp" alt="pizza">
+                <h2>Pizza Salame e Formaggio</h2>
+                <p>Mozzarella, salami y oregano.</p>
+                <div class="precio">
+                    <p>$42.000</p>
+                    <button type="button" aria-label="Agregar Pizza Salame e Formaggio al pedido">🛒</button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img src="../imagenes/pizza3.webp" alt="pizza">
+                <h2>Pizza Margherita</h2>
+                <p>Salsa de Tomate, mozzarella y albahaca.</p>
+                <div class="precio">
+                    <p>$38.000</p>
+                    <button type="button" aria-label="Agregar Pizza Margherita al pedido">🛒</button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="postre">
+                <img src="../imagenes/postres1.webp" alt="postre">
+                <h2>Tiramisu</h2>
+                <p>Bizcocho, cafe, mascarpone y cacao.</p>
+                <div class="precio">
+                    <p>$35.000</p>
+                    <button type="button" aria-label="Agregar Tiramisu al pedido">🛒</button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="postre">
+                <img src="../imagenes/postres2.webp" alt="postre">
+                <h2>Mousse al Cioccolato</h2>
+                <p>Mousse de chocolate con frambuesas.</p>
+                <div class="precio">
+                    <p>$30.000</p>
+                    <button type="button" aria-label="Agregar Mousse al Cioccolato al pedido">🛒</button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="postre">
+                <img src="../imagenes/postres3.webp" alt="postre">
+                <h2>Crostatine ai Frutti di bosco</h2>
+                <p>Tartaletas con crema y frutos rojos.</p>
+                <div class="precio">
+                    <p>$32.000</p>
+                    <button type="button" aria-label="Agregar Crostatine ai Frutti di bosco al pedido">🛒</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pedido contenedor" id="pedido">
+        <h2 class="texto-platillos">Tu pedido <span id="contador-carrito" class="contador-carrito" aria-live="polite">0 productos</span></h2>
+        <div class="contenedor-pedido">
+            <div class="lista-pedido">
+                <h3>Platillos seleccionados</h3>
+                <ul id="lista-carrito" aria-live="polite">
+                    <li>Tu carrito está vacío</li>
+                </ul>
+            </div>
+            <div class="resumen-pedido">
+                <h3>Resumen</h3>
+                <p>Total: <span id="total-carrito">$0.00</span></p>
+                <button id="btn-hacer-pedido" class="btn btn-verde" type="button">Finalizar pedido</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pantalla-finalizar" id="finalizar-pedido" hidden aria-labelledby="titulo-finalizar">
+        <div class="contenido-finalizar">
+            <button class="btn-volver" id="volver-carrito" type="button"><i class="fas fa-arrow-left"></i> Volver al catálogo</button>
+            <h1 id="titulo-finalizar" tabindex="-1">Finalizar pedido</h1>
+            <p class="texto-ayuda">Revisa tu compra, completa los datos de entrega y elige cómo deseas pagar.</p>
+            <div class="columnas-finalizar">
+                <section class="bloque-finalizar resumen-finalizar" aria-labelledby="titulo-resumen-finalizar">
+                    <h2 id="titulo-resumen-finalizar">Resumen del pedido</h2>
+                    <ul id="resumen-finalizar" class="lineas-finalizar"></ul>
+                    <p class="texto-ayuda">Los costos adicionales, si aplican, deben confirmarse con el restaurante y no están incluidos en el total.</p>
+                    <p class="total-finalizar">Total <strong id="total-finalizar"></strong></p>
+                    <button class="btn-borde" id="editar-carrito" type="button">Modificar en el carrito</button>
+                </section>
+                <form id="formulario-pedido" class="bloque-finalizar formulario-finalizar">
+                    <h2>Datos de entrega</h2>
+                    <div class="campos-pedido">
+                        <label>Nombre completo<input type="text" id="pedido-nombre" autocomplete="name" maxlength="100" required></label>
+                        <label>Número de contacto<input type="tel" id="pedido-telefono" autocomplete="tel" maxlength="30" required></label>
+                        <label class="campo-completo">Método de entrega
+                            <select id="metodo-entrega" required>
+                                <option value="domicilio">Domicilio</option>
+                                <option value="recogida">Recogida en el establecimiento</option>
+                            </select>
+                        </label>
+                        <label id="campo-direccion" class="campo-completo">Dirección de entrega<input type="text" id="pedido-direccion" autocomplete="street-address" maxlength="180" required></label>
+                        <label id="campo-barrio">Barrio o zona<input type="text" id="pedido-barrio" maxlength="100"></label>
+                        <label>Fecha deseada (opcional)<input type="date" id="pedido-fecha"></label>
+                        <label>Hora deseada (opcional)<input type="time" id="pedido-hora"></label>
+                        <label class="campo-completo">Indicaciones y observaciones<textarea id="pedido-observaciones" rows="3" maxlength="500" placeholder="Indicaciones para encontrar la dirección o detalles del pedido (opcional)"></textarea></label>
+                    </div>
+                    <h2>Medio de pago</h2>
+                    <div class="tarjetas-pago" id="tarjetas-pago" role="group" aria-label="Selecciona un medio de pago"></div>
+                    <input type="hidden" id="metodo-pago" required>
+                    <div id="instrucciones-pago" class="instrucciones-pago" aria-live="polite">
+                        <i class="fas fa-info-circle"></i><p>Selecciona un medio de pago para ver sus instrucciones.</p>
+                    </div>
+                    <p class="aviso-pago">Pago pendiente de verificación. Nunca compartas claves bancarias, PIN ni códigos de verificación.</p>
+                    <p class="aviso-confirmacion">WhatsApp abrirá un mensaje que podrás revisar antes de enviarlo. Abrirlo no significa que el pedido se haya recibido o confirmado.</p>
+                    <button class="btn btn-verde btn-enviar-pedido" type="submit"><i class="fab fa-whatsapp"></i> Enviar pedido por WhatsApp</button>
+                    <p id="error-pedido" class="error-pedido" role="alert" hidden></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="separador">
+        <div class="contenido-separador contenedor">
+            <h2>Comida italiana para empezar el día</h2>
+            <p>Empieza tu día comiedo deliciosa comida o un café italiano</p>
+            <a href="#menu" class="btn btn-verde">Ordenar ahora</a>
+        </div>
+    </div>
+
+    <section class="chef contenedor" id="chef">
+        <h2>Chef ejecutivo</h2>
+        <div class="contenido-chef">
+            <div class="texto-chef">
+                <h3>La exelencia está en la diversidad y el modo de progresar
+                    es conocer y comparar las diversidades de productos, culturas y
+                    técnicas
+                </h3>
+                <p>Massimo Bottura nació en 1962 en Módena, Italia, y es uno de los chefs más influyentes del mundo. Estudió derecho, pero dejó la carrera para dedicarse a la cocina; trabajó en una trattoria y aprendió con grandes maestros como Georges Cotteau y Alain Ducasse.</p>
+                <a href="#" class="btn btn-verde">Leer Bíografia</a>
+            </div>
+            <div class="imagen-chef">
+                <img src="../imagenes/chef.webp" alt="fotografia del chef">
+            </div>
+        </div>
+    </section>
+
+    <div class="formulario-contacto contenedor" id="contacto">
+
+        <div class="informacion-contacto">
+            <h3>Contactanos</h3>
+            <p><i class="fas fa-map-marker-alt"></i>23. Roma Italia 75012</p>
+            <p><i class="fas fa-envelope"></i> luca@turilli.it</p>
+            <p><i class="fas fa-phone-alt"></i>+57 311 754 2371</p>
+            <div class="redes-sociales">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="acciones-whatsapp">
+                <a href="https://wa.me/573117542371?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Hablar con un asesor</a>
+                <a href="https://wa.me/573117542371?text=Hola%2C%20quiero%20consultar%20el%20estado%20de%20mi%20pedido." target="_blank" rel="noopener"><i class="fas fa-search"></i> Consultar mi pedido</a>
+                <a href="https://wa.me/573117542371?text=Hola%2C%20necesito%20ayuda%20con%20mi%20compra." target="_blank" rel="noopener"><i class="fas fa-question-circle"></i> Necesito ayuda con mi compra</a>
+            </div>
+        </div>
+
+        <form class="formulario">
+            <div class="input-formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Pedro" id="nombre">
+            </div>
+            <div class="input-formulario">
+                <label for="apellidos">Apellido</label>
+                <input type="text" placeholder="Pedro" id="apellidos">
+            </div>
+            <div class="input-formulario">
+                <label for="correo">Correo</label>
+                <input type="email" placeholder="ejemplo@ejemplo.com" id="correo">
+            </div>
+            <div class="input-formulario">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="+90 543 779 9410" id="telefono">
+            </div>
+            <div class="input-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea></textarea>
+            </div>
+            <div class="btn-formulario">
+                <input type="submit" class="btn btn-verde" value="Enviar">
+            </div>
+            
+        </form>
+    </div>
+    <div class="pie-pagina ">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>23.Roma Italia 75012</p>
+            </div>
+            <div class="info">
+                <h3>Días especiales</h3>
+                <p>Sabados y Jueves 7am - 11pm</p>
+                <p>+57 311 754 2371</p>
+            </div>
+            <div class="info">
+                <h3>Horarios</h3>
+                <p>Lunes - Domingo 7am - 11pm</p>
+                <div class="redes-sociales redes-pie">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Noticias</h3>
+                <p>suscribete para recibir más noticias</p>
+                <input type="email" placeholder="Tu correo">
+                <input type="submit" class="btn btn-verde" value="Suscribirse">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy; 2026 Risotrante Turilli, desarrollado por eduardo y harrison</p>
+    </footer>
+    <div id="notificacion-carrito" class="notificacion-carrito" role="status" aria-live="polite"></div>
+    <div class="asistente-flotante">
+        <!-- Aquí va toda la estructura de la ventana del asistente -->
+        <section id="ventana-asistente" class="ventana-asistente" role="dialog" aria-label="Asistente virtual" aria-hidden="true" hidden>
+            <header class="encabezado-asistente">
+                <span class="icono-asistente">
+                    <svg style="width:20px;height:20px;fill:currentColor;" viewBox="0 0 640 512"><path d="M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32zM208 256c-17.7 0-32 14.3-32 32s14.3 32 32 32h32c17.7 0 32-14.3 32-32s-14.3-32-32-32H208zm224 32c0-17.7-14.3-32-32-32H368c-17.7 0-32 14.3-32 32s14.3 32 32 32h32c17.7 0 32-14.3 32-32z"/></svg>
+                </span>
+                <div>
+                    <strong>Asistente virtual</strong>
+                    <small>Pregúntame lo que quieras</small>
+                </div>
+                <button id="cerrar-chat" class="cerrar-chat" type="button" aria-label="Cerrar asistente"><i class="fas fa-minus" aria-hidden="true"></i></button>
+            </header>
+            <div id="mensajes-chat" class="mensajes-chat" role="log" aria-live="polite">
+                <p class="mensaje-asistente">¡Hola! Soy tu asistente virtual. Puedo conversar sobre cualquier tema y también ayudarte con el menú y los pedidos.</p>
+            </div>
+            <form id="formulario-chat" class="formulario-chat">
+                <label class="sr-only" for="entrada-chat">Escribe tu pregunta. Enter envía y Shift+Enter hace un salto de línea.</label>
+                <textarea id="entrada-chat" rows="1" maxlength="4000" placeholder="Escribe tu pregunta..." autocomplete="off" required></textarea>
+                <button class="btn btn-verde" type="submit" aria-label="Enviar mensaje"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+            </form>
+            <p class="aviso-chat">No envíes contraseñas, datos bancarios ni información sensible.</p>
+            <a class="enlace-asesor" href="https://wa.me/573117542371" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Hablar con un asesor</a>
+        </section>
+        <button id="boton-asistente" class="boton-asistente" type="button" aria-label="Abrir asistente virtual" aria-expanded="false" aria-controls="ventana-asistente">
+            💬
+            <span class="sr-only">Abrir asistente virtual</span>
+        </button>
+    </div>
+    <script src="../java/java.js"></script>
+
+</body>
+
+</html>
